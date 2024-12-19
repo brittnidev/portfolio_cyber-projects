@@ -100,3 +100,23 @@ Isolated affected systems to prevent further spread of the ransomware. Disabled 
 Reflections/Notes: Record additional notes.
 The use of VirusTotal provided critical insights into the nature of the suspicious file and confirmed its malicious intent. This, combined with other investigative methods, allowed for a comprehensive understanding of the incident. The findings emphasize the importance of integrating threat intelligence tools into incident response efforts to enhance detection and mitigation capabilities.
 
+# Phishing incident response playbook
+```
+Date: 
+07/20/2022
+Entry:
+1
+Description
+Evaluate the alert
+Tool(s) used
+N/A
+The 5 W's 
+Who caused the incident? Clyde West
+What happened? Phishing email 
+When did the incident occur? Wednesday, July 20, 2022 09:30:14 AM
+Where did the incident happen? The incident occurred within the businesses HR department
+Why did the incident happen? A phishing email was recieved by sender Clyde West of Def Communications, with a password-protected attachment, “bfsvc.exe,” which was downloaded infecting the users system. 
+Additional notes
+Having previously investigated the file hash, it is confirmed to be a known malicious file. Furthermore, the alert severity is reported as medium. With these findings, I chose to escalate this ticket to a level-two SOC analyst to take further action.
+```
+
