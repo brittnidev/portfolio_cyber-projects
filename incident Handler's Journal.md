@@ -119,4 +119,27 @@ Why did the incident happen? A phishing email was recieved by sender Clyde West 
 Additional notes
 Having previously investigated the file hash, it is confirmed to be a known malicious file. Furthermore, the alert severity is reported as medium. With these findings, I chose to escalate this ticket to a level-two SOC analyst to take further action.
 ```
+# Final Report
 
+```
+Goal 1: Identify exactly what happened.
+December 28, 2022, at 7:20 p.m., PT,
+Goal 2: Identify when it happened.
+At approximately 3:13 p.m., PT, on December 22, 2022, an organization recieved an phishing email. The employee that received the email from an external email address where the sender requested a $25,000 cryptocurrency payment. The employee assumed the email was spam and deleted it. The ransom increased to 50,000 byt the time the incident was brought to the security team for further investiation into whether data was in fact stolen and how.
+
+Goal 3: Identify the response actions that the company took.
+A vulnerabilty was detected in the e-commerce application which allowed the attacker to access customer transaction data. It has been determined that the attacker was able to accomplish this by modifying the order number included ub tge URL string of a purchase confirmation page, allowing them to access customer purchse confirmation pages. Thea attacker collected this customer data. The logs indicated that the attacker accessed the information of thousands of purchase confirmation pages.
+
+
+Goal 4: Identify future recommendations.
+To prevent future recurrences, we are taking the following actions:
+-Perform routine vulnerability scans and penetration testing.
+-Implement the following access control mechanisms:
+-Implement allowlisting to allow access to a specified set of URLs and automatically block all -requests outside of this URL range.
+-Ensure that only authenticated users are authorized access to content.
+
+```
+Reflections/Notes: Record additional notes.
+The organization collaborated with the public relations department to disclose the data breach to its customers. Additionally, the organization offered free identity protection services to customers affected by the incident. 
+
+After the security team reviewed the associated web server logs, the cause of the attack was very clear. There was a single log source showing an exceptionally high volume of sequentially listed customer orders.
